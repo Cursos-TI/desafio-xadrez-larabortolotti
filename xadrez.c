@@ -7,7 +7,7 @@
 int main() {
 
        
-        int torre = 1, bispo = 1, rainha = 0;
+        int torre = 1, bispo = 1, rainha = 0, cavalo = 1;
 
         printf("Desafio Jogo de Xadrez. \n");
         
@@ -19,6 +19,7 @@ int main() {
         {
             printf("Direita. \n");
         }
+        printf("\n");
         
         //Movimentacao do Bispo- 5 casas para a diagonal direita.
         printf("Movimentacao do bispo. \n");
@@ -31,6 +32,8 @@ int main() {
 
         } while ( bispo <= 5); 
 
+        printf("\n");
+
         //Movimentacao da rainha- 8 casas para esquerda.
 
         printf("Movimentacao da rainha");
@@ -40,6 +43,20 @@ int main() {
             printf("Esquerda. \n");
             rainha++;
         } 
+        printf("\n");
+        
+        // Movimentacao do cavalo - em L
+        printf("Movimentacao do cavalo \n");
+
+        while (cavalo < 2)
+        { for ( int direcao = 0; direcao < 2; direcao++)
+        {
+            printf("Cima \n");
+        }
+        
+            printf("Esquerda\n");
+            cavalo++;
+        }
 
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
